@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/lenilson/go-finance'
+make: Leaving directory '/home/lenilson/go-finance'
+ 
+Makefile:2: *** target pattern contains no '%'.  Stop.
+

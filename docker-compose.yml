@@ -1,0 +1,18 @@
+version: '3'
+services:
+  postgresql:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: go_finance
+    ports:
+      - "5432:5432"
+    networks:
+      - ms-network
+    restart: unless-stopped
+
+networks:
+    ms-network:
+        driver: bridge
